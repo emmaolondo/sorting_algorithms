@@ -57,7 +57,7 @@ void quick_sort_recursive(int *array, size_t size, int low, int high)
 {
 	int pivot;
 
-	if (high - low > 0)
+	if (low < high)
 	{
 		pivot = partition(array, size, low, high);
 		quick_sort_recursive(array, size, low, pivot - 1);
